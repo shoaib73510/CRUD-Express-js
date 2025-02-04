@@ -1,10 +1,13 @@
 import express from "express";
 
 import post from "./routes/post.js"
+const app = express();
 
 const port = process.env.PORT || 8000;
 
-const app = express();
+app.use(express.json())
+
+
 
 app.use("/api/list",post);
 
