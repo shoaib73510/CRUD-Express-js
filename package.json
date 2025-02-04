@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index",
-    "dev" : "node --watch node"
+    "dev" : "node --watch --env-file=.env index"
   },
   "keywords": [],
   "author": "",
